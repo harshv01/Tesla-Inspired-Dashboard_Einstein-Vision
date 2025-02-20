@@ -46,8 +46,8 @@ def extract_frames(video_path, output_path, skip_interval=10):
     print("Frames extracted successfully.")
 
 
-data_path = 'C:/Users/msult/Downloads/P3Data/P3Data/Sequences'
-base_frames_path = 'C:/Users/msult/Downloads/P3Data/P3Data'
+data_path = '../P3Data/Sequences'
+base_frames_path = '../P3Data'
 
 frames_directory = os.path.join(base_frames_path, "Frames")
 if not os.path.exists(frames_directory):
@@ -58,7 +58,7 @@ for i in range(1, 14):
     if not os.path.exists(scene_dir):
         os.makedirs(scene_dir)
     
-    video_path = "C:\\Users\\msult\\Downloads\\P3Data\\P3Data\\Sequences\\scene1\\Undist\\2023-02-14_11-04-07-front_undistort.mp4"
+    video_path = "..\\P3Data\\Sequences\\scene1\\Undist\\2023-02-14_11-04-07-front_undistort.mp4"
     video_base_path = os.path.join(data_path, f'scene{i}', 'Undist')
     video_list = os.listdir(video_base_path)
     for name in video_list:
