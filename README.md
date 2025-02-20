@@ -1,11 +1,11 @@
-# How to run the code:
+# Tesla Inspired Dashboard (Einstein Vision)
 
-1. Install the aforementioned models along with their dependencies in the form of Conda enviroments.
-2. Generate the data in the pickle form format as required in the 'blender_code.py'.
-3. Place the generated data in the directories as mentioned in 'blender_code.py'.
-4. Specify the scene and run blender code.
+We built a visualization on car's surroundings inspired by that of Tesla's dashboard. We used a set of videos recorded from our professor's Tesla Model S. The visualizations were rendered in Blender.
 
-# Packages used:
+![crop-1-video-ezgif com-optimize](https://github.com/user-attachments/assets/247e5d71-9b21-4581-aac3-5ae555ce38cd)
+
+
+## Packages used:
 
 1. **LANE DETECTION**: mask RCNN (https://debuggercafe.com/lane-detection-using-mask-rcnn/):
 	The model gives the masks and bounding boxes of three major classes- 'dotted-line', 'solid-line' and 'divider-line'. Upon the calculation of masks, we find 5 spline curve points for each solid-line and the divider-line, and only two endpoints for each dotted line (each stripe of the striped lane). Using these guide points, lanes are plotted in Blender.
@@ -31,3 +31,9 @@
 8. **HUMAN POSE DETECTION** I2L-MESHNET (https://github.com/mks0601/I2L-MeshNet_RELEASE):
 	Generates .obj files matching the pose of the persons detected in the image. The input needs to be in the form of bounding boxes, as the model is unable to detect humans from a large image.
 
+## How to run the code:
+
+1. Install the aforementioned models along with their dependencies in the form of Conda enviroments.
+2. Generate the data in the pickle form format as required in the 'blender_code.py'.
+3. Place the generated data in the directories as mentioned in 'blender_code.py'.
+4. Specify the scene and run blender code.
