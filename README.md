@@ -1,6 +1,6 @@
 # Tesla Inspired Dashboard (Einstein Vision)
 
-We built a visualization on car's surroundings inspired by that of Tesla's dashboard. We used a set of videos recorded from our professor's Tesla Model S. The visualizations were rendered in Blender.
+We built a visualization of car's surroundings inspired by that of Tesla's dashboard. We used a set of videos recorded from our professor's Tesla Model S. The visualizations were rendered in Blender.
 
 ![crop-1-video-ezgif com-optimize](https://github.com/user-attachments/assets/247e5d71-9b21-4581-aac3-5ae555ce38cd)
 
